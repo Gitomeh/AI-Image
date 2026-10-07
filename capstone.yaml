@@ -1,0 +1,21 @@
+run: npm run dev
+seed: npm run seed
+test: npm test
+base_url: http://localhost:3000
+endpoints:
+  - GET /health
+  - POST /images
+  - GET /images
+  - GET /images/:id
+  - POST /images/:id/process
+  - POST /jobs/images/process
+  - POST /jobs/embeddings/generate
+  - GET /jobs/:id
+  - POST /posts
+  - GET /posts
+  - GET /posts/:id
+  - GET /posts/:id/images
+  - GET /suggestions
+  - GET /suggestions/:id
+  - POST /suggestions/:id/approve
+  - POST /suggestions/:id/reject
